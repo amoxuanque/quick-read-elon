@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>《The Book of Elon》中文交互知识地图</title>
+    <meta
+      name="description"
+      content="《The Book of Elon》中文交互知识地图：四大部分、关键句子、使命框架、马斯克算法、公司时间线、火星图解与方法地图。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-a" aria-hidden="true"></div>
+    <div class="ambient ambient-b" aria-hidden="true"></div>
+    <div class="ambient ambient-c" aria-hidden="true"></div>
+
+    <header class="hero reveal" id="top">
+      <div class="hero-copy">
+        <p class="hero-kicker">中文交互知识地图</p>
+        <h1 class="hero-title">
+          《The Book of Elon》
+          <span>把马斯克的世界观拆成一张可读的地图</span>
+        </h1>
+        <p class="hero-summary">
+          这本书不是普通传记，更像一份把公开言论、公司实践、工程方法和未来主张重新编排后的“认知系统图”。
+          我把它压缩成单页知识地图，让你不靠左右滑动，也能完整读完主要结构。
+        </p>
+
+        <div class="hero-actions">
+          <a href="#overview" class="hero-button hero-button-primary">先看整本书骨架</a>
+          <a href="#framework" class="hero-button hero-button-secondary">直接进入知识地图</a>
+        </div>
+
+        <div class="hero-metrics">
+          <article class="metric-card">
+            <span>书籍结构</span>
+            <strong>4</strong>
+            <p>四大部分，层层递进：使命、执行、公司、文明未来。</p>
+          </article>
+          <article class="metric-card">
+            <span>阅读体量</span>
+            <strong>371</strong>
+            <p>页数不短，但主题清楚，适合按模块阅读而不是线性啃完。</p>
+          </article>
+          <article class="metric-card">
+            <span>核心方法</span>
+            <strong>69</strong>
+            <p>书尾浓缩成 69 条可带走的方法，这里会按类别做成知识网格。</p>
+          </article>
+          <article class="metric-card">
+            <span>关键主线</span>
+            <strong>1</strong>
+            <p>有用性是价值标准，第一性原理是思维工具，组织与工厂是落地机器。</p>
+          </article>
+        </div>
+      </div>
+
+      <aside class="hero-side">
+        <div class="cover-panel">
+          <div class="cover-shell">
+            <div class="cover-art" aria-label="《The Book of Elon》封面图形化排版">
+              <p class="cover-art-kicker">ELON</p>
+              <h2 class="cover-art-title">知识地图</h2>
+              <p class="cover-art-line">使命 / 执行 / 公司 / 未来</p>
+              <div class="cover-art-orbit"></div>
+              <div class="cover-art-dot cover-art-dot-a"></div>
+              <div class="cover-art-dot cover-art-dot-b"></div>
+            </div>
+          </div>
+          <div class="cover-meta">
+            <p class="meta-kicker">阅读定位</p>
+            <h2>先别把它当人物故事</h2>
+            <p>更准确地说，这是一份关于目标、工程、组织与文明愿景的操作手册。</p>
+          </div>
+        </div>
+
+        <div class="thesis-card">
+          <p class="meta-kicker">一句话结论</p>
+          <p>这本书试图证明：公司不是赚钱容器，而是推动未来的机器；而马斯克的方法，本质上是把这种机器不断调到更高功率。</p>
+        </div>
+      </aside>
+    </header>
+
+    <nav class="nav reveal" aria-label="页面导航">
+      <a href="#overview" class="nav-link">总览</a>
+      <a href="#framework" class="nav-link">知识地图</a>
+      <a href="#parts" class="nav-link">四大部分</a>
+      <a href="#algorithm" class="nav-link">马斯克算法</a>
+      <a href="#timeline" class="nav-link">公司时间线</a>
+      <a href="#future" class="nav-link">火星与未来</a>
+      <a href="#methods" class="nav-link">方法地图</a>
+      <a href="#routes" class="nav-link">怎么读</a>
+    </nav>
+
+    <main class="page">
+      <section class="section reveal" id="overview">
+        <div class="section-head">
+          <p class="section-kicker">总览</p>
+          <h2 class="section-title">整本书其实只做了四件事</h2>
+          <p class="section-desc">先定义什么值得做，再定义怎么想、怎么干、最后把公司嵌入对人类未来的想象。</p>
+        </div>
+
+        <div class="overview-grid" id="overviewGrid"></div>
+      </section>
+
+      <section class="section reveal" id="framework">
+        <div class="section-head">
+          <p class="section-kicker">知识地图</p>
+          <h2 class="section-title">把使命、领域与思维工具放在同一张图里</h2>
+          <p class="section-desc">这一块不是目录，而是全书的核心框架：哪些问题值得投入，马斯克主要用什么思维工具去处理它们。</p>
+        </div>
+
+        <div class="framework-layout">
+          <div class="domain-panel">
+            <h3>五大关键领域</h3>
+            <div id="domainList" class="domain-list"></div>
+          </div>
+
+          <div class="tool-panel">
+            <h3>核心思维工具</h3>
+            <div id="toolList" class="tool-list"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="parts">
+        <div class="section-head">
+          <p class="section-kicker">四大部分</p>
+          <h2 class="section-title">不是目录复述，而是每一部分该怎么看</h2>
+          <p class="section-desc">左边选部分，右边看这一部分的任务、重点章节和最该带走的东西。</p>
+        </div>
+
+        <div class="parts-layout">
+          <div id="partTabs" class="part-tabs"></div>
+          <div id="partDetail" class="part-detail"></div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="algorithm">
+        <div class="section-head">
+          <p class="section-kicker">核心方法</p>
+          <h2 class="section-title">马斯克算法，是整本书最能直接拿去用的部分</h2>
+          <p class="section-desc">如果只带走一套方法，最值得带走的是这五步。它不是励志话，而是一套明确的反直觉顺序。</p>
+        </div>
+
+        <div class="algorithm-layout">
+          <div id="algorithmSteps" class="algorithm-steps"></div>
+          <div class="algorithm-side">
+            <article class="side-card">
+              <p class="meta-kicker">常见误区</p>
+              <h3>大多数团队上来就优化</h3>
+              <p>书里最反复提醒的是：别急着让旧流程跑得更快，先确认这流程是否配活着。</p>
+            </article>
+            <article class="side-card">
+              <p class="meta-kicker">为什么难</p>
+              <h3>因为它要求你先否定自己</h3>
+              <p>真正难的是承认已有要求、流程和结构可能本来就是错的，这比提速难得多。</p>
+            </article>
+            <article class="side-card">
+              <p class="meta-kicker">组织意义</p>
+              <h3>它让团队共享同一种决策语法</h3>
+              <p>当团队都按同一顺序思考，工厂、会议、采购、审查和产品决策会开始互相对得上。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="timeline">
+        <div class="section-head">
+          <p class="section-kicker">公司时间线</p>
+          <h2 class="section-title">创业史在这里不是故事，而是连续下注图</h2>
+          <p class="section-desc">看时间线的重点不是记年份，而是看资金、认知和风险是如何一轮轮被重新压进更难的问题。</p>
+        </div>
+
+        <div id="timelineList" class="timeline-list"></div>
+      </section>
+
+      <section class="section reveal" id="future">
+        <div class="section-head">
+          <p class="section-kicker">火星与未来</p>
+          <h2 class="section-title">后半本已经不只是讲公司，而是在讲文明保险</h2>
+          <p class="section-desc">为什么是火星，为什么要可持续能源，为什么要警惕人工智能，这些问题在书里被放进同一套长期叙事中。</p>
+        </div>
+
+        <div class="future-layout">
+          <div class="planet-panel">
+            <div class="planet-map">
+              <div class="orbit-ring"></div>
+              <div class="planet-earth"></div>
+              <div class="planet-mars"></div>
+              <div class="orbit-label">EARTH → MARS GATEWAY</div>
+            </div>
+          </div>
+
+          <div id="futureGrid" class="future-grid"></div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="quotes">
+        <div class="section-head">
+          <p class="section-kicker">关键句子</p>
+          <h2 class="section-title">最能代表这本书语气的句子</h2>
+          <p class="section-desc">这些句子像是整本书的压缩口令，读完你会更容易理解它的节奏和锋利感。</p>
+        </div>
+
+        <div id="quoteGrid" class="quote-grid"></div>
+      </section>
+
+      <section class="section reveal" id="methods">
+        <div class="section-head">
+          <p class="section-kicker">方法地图</p>
+          <h2 class="section-title">69 条方法不做横向切换，改成固定知识网格</h2>
+          <p class="section-desc">这里不再依赖左右滑动，而是把方法按类别切成固定地图。点击分类会在同一页里切换内容，不会超出页面。</p>
+        </div>
+
+        <div class="method-shell">
+          <div id="methodFilter" class="method-filter"></div>
+          <div id="methodGrid" class="method-grid"></div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="routes">
+        <div class="section-head">
+          <p class="section-kicker">怎么读</p>
+          <h2 class="section-title">不同读者，应该从不同入口进入</h2>
+          <p class="section-desc">最有效率的读法不是顺着页码走，而是先找与你最相关的部分，再补全其余结构。</p>
+        </div>
+
+        <div class="route-grid">
+          <article class="route-card">
+            <p class="meta-kicker">10 分钟</p>
+            <h3>只抓骨架</h3>
+            <p>先看总览、知识地图、马斯克算法和火星图解，你就能抓到整本书的脊梁。</p>
+          </article>
+          <article class="route-card">
+            <p class="meta-kicker">管理者</p>
+            <h3>第二部分优先</h3>
+            <p>组织边界、反馈机制、速度、工厂与瓶颈管理，是这本书最强的现实迁移价值所在。</p>
+          </article>
+          <article class="route-card">
+            <p class="meta-kicker">创业者</p>
+            <h3>第三部分优先</h3>
+            <p>重点看连续下注、控制关键方向、熬过至暗时刻以及如何把退出收益压回下一局。</p>
+          </article>
+          <article class="route-card">
+            <p class="meta-kicker">阅读提醒</p>
+            <h3>前半本拿方法，后半本拿问题意识</h3>
+            <p>前半本适合直接带走；后半本更适合扩展视角，并不适合把整套世界观原样照搬。</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer reveal">
+      <p>本页基于你提供的本地英文版 `epub` 做中文重构，目标是更像一张交互知识地图，而不是普通摘要页。</p>
+      <a href="#top">回到顶部</a>
+    </footer>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
